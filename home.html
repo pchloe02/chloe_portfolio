@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Portefolio</title>
+  </head>
+  <div id="noise"></div>
+  <body id="color">
+    <!-- Elements fixent, titre et nav bar -->
+    
+    <!-- <div class="frame"></div> -->
+
+    <div class="header">  
+        <p class="logo">Cplrn</p>
+    </div>
+    
+      <section class="nav-links">
+        <ul id="list-nav">
+          <a href="#about-section"><li>About</li></a>
+          <a href="#projet-section"><li>Projets</li></a>
+          <a href="#contact-section"><li>Contact</li></a>
+        </ul>
+      </section>
+
+      <!-- panels -->
+    <div class="container-panels">
+
+      <section id="about-section" class="panel about">
+        <div class="pp">
+          <img  id="pp" src="./assets/img/Anime icons girls.jpg" alt="pp">
+        </div>
+        <div>
+          <h2>Qui suis-je ?</h2>
+          <p id="about-me">
+            <span id="bold">Bonjour, je suis Chloé apprenante chez Ada Tech School à la 
+            recherche d’une alternance en développement front-end.</span>
+            <br>
+            Après 2 ans passés à étudier les arts plastiques à la fac, 
+            j’ai décidé de troquer mes toiles contre des lignes de code. 
+            Attirée par l’alliance entre la créativité et la technologie,
+            j’ai choisi de me spécialiser dans le développement web.
+          </p>
+        </div>
+      </section>
+  
+      <section id="projet-section" class="panel projet">
+        <h2 id="title-projet">Projets</h2>
+        <div class="projet-wrapper">
+          <a class="frame-img" href=""
+          ><img class="img-projet" src="./assets/img/daily-space.JPG" alt="daily-space"
+          /></a>
+          <a  class="frame-img" href="">
+          <img class="img-projet" src="./assets/img/page-extension.JPG" alt="extension"
+          /></a>
+          <a class="frame-img" href="">
+            <img class="img-projet" src="./assets/img/daily-space.JPG" alt="site-meuble" /></a>
+        </div>
+        <p>Plus de projets</p>
+      </section>
+  
+      <section id="contact-section" class="panel contact">
+        <h2>Contact</h2>
+        <form action="post">
+          <input type="text" />
+          <br />
+          <textarea
+            name="subject"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Write here"
+          ></textarea>
+          <input type="button" name="" id="" value="Submit" />
+        </form>
+      </section>
+
+    </div>
+
+    <script type="module" src="./js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  </body>
+</html>
