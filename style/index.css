@@ -10,7 +10,7 @@
 
 :root {
 
-    --name-title-size: 5rem;
+    --title-size: 5rem;
     --text-size: 1.5rem;
 }
 
@@ -63,23 +63,23 @@ body {
 
 .name-title {
     font-family: 'Tan Pearl', sans-serif;
-    font-size: var(--name-title-size);
+    font-size: var(--title-size);
 
 }
 
 .btn-start {
 
-    font-family: 'Red Hat',  sans-serif;
+    font-family: 'Red Hat', sans-serif;
     font-weight: 600;
-    color:rgb(235, 235, 243);
-    background-color:rgb(45, 38, 54);
+    color: rgb(235, 235, 243);
+    background-color: rgb(45, 38, 54);
     padding: 1rem;
     border: none;
     border-radius: 30px;
 }
 
 .footer {
-    
+
     text-align: end;
     grid-column: 3;
     grid-row: 3;
@@ -97,19 +97,18 @@ body {
     pointer-events: none;
 }
 
-#color{
+#color {
     top: 0;
 
     z-index: 0;
     margin: 0;
-    
+
     background-size: 100% 100%;
-    background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
-    background-image: radial-gradient(75% 75% at 38% 44%, #282C46BF 0%, #073AFF00 99%),radial-gradient(75% 75% at -10% 8%, #110F23B5 1%, #073AFF00 60%),radial-gradient(75% 75% at 114% 112%, #110F23B8 1%, #073AFF00 60%),radial-gradient(75% 75% at 8% 90%, #3F206021 1%, #073AFF00 60%),radial-gradient(85% 85% at 12% 82%, #9930AF21 1%, #073AFF00 60%),radial-gradient(30% 75% at 70% 23%, #3B27528A 2%, #073AFF00 60%),radial-gradient(80% 80% at 75% 9%, #A03FC52B 26%, #073AFF00 60%),radial-gradient(80% 80% at 19% 48%, #0F31943D 26%, #073AFF00 60%),radial-gradient(80% 80% at 89% 67%, #344AB038 26%, #073AFF00 60%),linear-gradient(29deg, #181C30FF 100%, #7C5F85FF 100%);
-    
+    background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+    background-image: radial-gradient(75% 75% at 38% 44%, #282C46BF 0%, #073AFF00 99%), radial-gradient(75% 75% at -10% 8%, #110F23B5 1%, #073AFF00 60%), radial-gradient(75% 75% at 114% 112%, #110F23B8 1%, #073AFF00 60%), radial-gradient(75% 75% at 8% 90%, #3F206021 1%, #073AFF00 60%), radial-gradient(85% 85% at 12% 82%, #9930AF21 1%, #073AFF00 60%), radial-gradient(30% 75% at 70% 23%, #3B27528A 2%, #073AFF00 60%), radial-gradient(80% 80% at 75% 9%, #A03FC52B 26%, #073AFF00 60%), radial-gradient(80% 80% at 19% 48%, #0F31943D 26%, #073AFF00 60%), radial-gradient(80% 80% at 89% 67%, #344AB038 26%, #073AFF00 60%), linear-gradient(29deg, #181C30FF 100%, #7C5F85FF 100%);
+
 
     background-attachment: fixed;
     background-repeat: repeat;
-    
-  }
-  
+
+}

@@ -1,3 +1,10 @@
+document.addEventListener('mousemove', function(e) {
+    var mouseX = e.clientX;
+    var mouseY = e.clientY;
+
+    var element = document.querySelector('.mouse');
+    element.style.transform = 'translate(' + (mouseX / 100) + 'px, ' + (mouseY / 100) + 'px)';
+});
 
 // gsap.registerPlugin(ScrollTrigger);
 

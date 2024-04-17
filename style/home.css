@@ -1,39 +1,37 @@
 @font-face {
-    font-family: 'Ikaros';
+    font-family: 'RedHatText';
     src: url(/assets/font/RedHatText-VariableFont_wght.ttf);
 }
 
 @font-face {
-    font-family: 'Ahsing';
+    font-family: 'Tan-Pearl';
     src: url(/assets/font/tan-pearl.otf);
 }
 
-
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
-
 :root {
 
-    --title-font: 4rem;
-    --main-green: #10172c;
-    --white: rgb(234, 236, 245);
+    --title-size: 3rem;
+    --sub-title-size: 2rem;
+    --white-text: rgb(234, 236, 245);
+
 }
 
-*, hmtl {
+*,
+hmtl {
     margin: 0;
 
 }
 
 body {
-    font-family: "Ikaros";
-    color: var(--white);
-    background-color:  var(--main-green);
-    
+    font-family: 'RedHatText';
+    color: var(--white-text);
+
+
 
 }
 
 h2 {
-
-    font-size: 2.5rem;
+    font-size: var(--sub-title-size);
 }
 
 /* noise ef */
@@ -50,19 +48,16 @@ h2 {
     pointer-events: none;
 }
 
-#color{
+#color {
     top: 0;
     z-index: 0;
     margin: 0;
-    
-    /* background: 
-	linear-gradient(20deg, #32374B, #2c3044, #25293c, #1f2335, #181c2d, #121526); */
     background-size: 100% 100%;
-    background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
-    background-image: radial-gradient(75% 75% at 38% 44%, #282C46BF 0%, #073AFF00 99%),radial-gradient(75% 75% at -10% 8%, #110F23B5 1%, #073AFF00 60%),radial-gradient(75% 75% at 114% 112%, #110F23B8 1%, #073AFF00 60%),radial-gradient(75% 75% at 8% 90%, #3F206021 1%, #073AFF00 60%),radial-gradient(85% 85% at 12% 82%, #9930AF21 1%, #073AFF00 60%),radial-gradient(30% 75% at 70% 23%, #3B27528A 2%, #073AFF00 60%),radial-gradient(80% 80% at 75% 9%, #A03FC52B 26%, #073AFF00 60%),radial-gradient(80% 80% at 19% 48%, #0F31943D 26%, #073AFF00 60%),radial-gradient(80% 80% at 89% 67%, #344AB038 26%, #073AFF00 60%),linear-gradient(29deg, #181C30FF 100%, #7C5F85FF 100%);
+    background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+    background-image: radial-gradient(75% 75% at 38% 44%, #282C46BF 0%, #073AFF00 99%), radial-gradient(75% 75% at -10% 8%, #110F23B5 1%, #073AFF00 60%), radial-gradient(75% 75% at 114% 112%, #110F23B8 1%, #073AFF00 60%), radial-gradient(75% 75% at 8% 90%, #3F206021 1%, #073AFF00 60%), radial-gradient(85% 85% at 12% 82%, #9930AF21 1%, #073AFF00 60%), radial-gradient(30% 75% at 70% 23%, #3B27528A 2%, #073AFF00 60%), radial-gradient(80% 80% at 75% 9%, #A03FC52B 26%, #073AFF00 60%), radial-gradient(80% 80% at 19% 48%, #0F31943D 26%, #073AFF00 60%), radial-gradient(80% 80% at 89% 67%, #344AB038 26%, #073AFF00 60%), linear-gradient(29deg, #181C30FF 100%, #7C5F85FF 100%);
     background-attachment: fixed;
     background-repeat: repeat;
-    
+
 }
 
 ::-webkit-scrollbar {
@@ -80,11 +75,12 @@ h2 {
 }
 
 /* Fixed elements */
+
 .frame {
     z-index: 10;
     position: fixed;
     margin: 10px;
-    border: 1px solid var(--white);
+    border: 1px solid var(--white-text);
     top: 0;
     left: 0;
     right: 0;
@@ -97,23 +93,24 @@ h2 {
 .header {
     margin-top: 25px;
     display: flex;
-    position: fixed;
+    position: sticky;
     top: 0;
-    left: 50%;
-    z-index: 9;  
-    text-align: center; /* faire apparaître ou non au début ?   */
-
+    justify-content: center;
+    z-index: 9;
 }
 
 .logo {
-    font-family: 'Ahsing';
-    font-size: 3rem;
+    margin: 1.5rem;
+    font-family: 'Tan-Pearl';
+    font-size: var(--title-size);
+    ;
 }
 
 
 
-h1, h2 {
-    font-family: 'Ahsing';
+h1,
+h2 {
+    font-family: 'Tan-Pearl';
     font-weight: 500;
 
 }
@@ -121,7 +118,7 @@ h1, h2 {
 #front-end {
 
     font-weight: 500;
-    
+
 }
 
 
@@ -134,29 +131,30 @@ h1, h2 {
 }
 
 #list-nav {
-    font-family: 'Ahsing';
+    font-family: 'Tan-Pearl';
     position: relative;
     left: -20px;
     list-style-type: none;
-    
+
 }
 
 a {
     text-decoration-line: none;
     margin: 9px;
-    color: var(--white);
+    color: var(--white-text);
     font-size: 1.2rem;
 }
 
 li {
     font-size: 2rem;
 }
+
 /* Fixed elements end */
 
 
 /* about panel */
 .about {
-    margin-top: 10rem;
+    margin-top: 13rem;
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
@@ -165,8 +163,9 @@ li {
     font-size: 1.2rem;
     margin-top: 20px;
     text-align: justify;
-    
+
 }
+
 #bold {
     font-weight: 600;
 }
@@ -198,7 +197,7 @@ li {
 
 .frame-img {
 
-    border: white solid 1px;
+    border: var(--white-text) solid 1px;
     border-radius: 25px;
     height: 35rem;
     width: 20rem;
@@ -209,6 +208,6 @@ li {
     right: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; 
-    
+    object-fit: cover;
+
 }
