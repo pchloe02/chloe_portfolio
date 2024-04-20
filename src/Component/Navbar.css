@@ -1,7 +1,4 @@
-@font-face {
-    font-family: 'Tan Pearl';
-    src: url(../assets/font/tan-pearl.otf);
-  }
+@import url(../App.css);
 
 .navbar {
     position: fixed;

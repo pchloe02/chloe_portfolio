@@ -1,8 +1,41 @@
-.about {
+@import url(../App.css);
+
+.about-container {
     z-index: 0;
     height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
-h1 {
-    text-align: center;
+.about {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    margin: 0 16rem;
+}
+
+h2 {
+ font-family: 'Tan Pearl';
+ font-weight: 100;
+ font-size: 2rem;
+ margin: 1rem 0;
+
+}
+
+#about-me {
+    font-size: 1.2rem;
+    text-align: justify;
+
+}
+
+#bold {
+    font-weight: 600;
+}
+
+
+#pp {
+    width: 75%;
+    margin: 50px;
+    filter: grayscale(70%);
 }

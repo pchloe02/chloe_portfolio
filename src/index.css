@@ -1,7 +1,4 @@
-@font-face {
-  font-family: 'Red Hat Text';
-  src: url(./assets/font/RedHatText-VariableFont_wght.ttf);
-}
+@import url(./App.css);
 
 *{
   margin: 0;
@@ -12,6 +9,7 @@ body {
   font-family: 'Red Hat Text', Arial, Helvetica, sans-serif ;
   height: 100vh;
   color: #fff;
+
 }
 
 #noise {
