@@ -1,0 +1,11 @@
+.landing {
+    position: relative;
+    z-index: 99;
+    height: 100vh;
+    width: 100%;
+    background-image: radial-gradient(75% 75% at 38% 44%, #282C46BF 0%, #073AFF00 99%), radial-gradient(75% 75% at -10% 8%, #110F23B5 1%, #073AFF00 60%), radial-gradient(75% 75% at 114% 112%, #110F23B8 1%, #073AFF00 60%), radial-gradient(75% 75% at 8% 90%, #3F206021 1%, #073AFF00 60%), radial-gradient(85% 85% at 12% 82%, #9930AF21 1%, #073AFF00 60%), radial-gradient(30% 75% at 70% 23%, #3B27528A 2%, #073AFF00 60%), radial-gradient(80% 80% at 75% 9%, #A03FC52B 26%, #073AFF00 60%), radial-gradient(80% 80% at 19% 48%, #0F31943D 26%, #073AFF00 60%), radial-gradient(80% 80% at 89% 67%, #344AB038 26%, #073AFF00 60%), linear-gradient(29deg, #181C30FF 100%, #7C5F85FF 100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}

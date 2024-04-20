@@ -5,11 +5,11 @@
 
 .navbar {
     position: fixed;
-    z-index: 1;
+    z-index: 98;
     margin-top: 2.5rem;
     margin-left: 2.5rem;
     height: 100vh;
-    color: #fff;
+
     display: grid;
     grid-template-rows: 1fr 2fr;
 }
