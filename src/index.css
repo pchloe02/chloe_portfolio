@@ -1,68 +1,37 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: 'Red Hat Text';
+  src: url(./assets/font/RedHatText-VariableFont_wght.ttf);
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+*{
+  margin: 0;
+  padding: 0;
 }
 
 body {
+  font-family: 'Red Hat Text', Arial, Helvetica, sans-serif ;
+  height: 100vh;
+}
+
+#noise {
+  top: 0;
+  position: fixed;
+  mix-blend-mode: color-dodge;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.5' numOctaves='5' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' opacity='30%' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  pointer-events: none;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+#color {
+  top: 0;
+  z-index: 0;
+  margin: 0;
+  background-size: 100% 100%;
+  background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+  background-image: radial-gradient(75% 75% at 38% 44%, #282C46BF 0%, #073AFF00 99%), radial-gradient(75% 75% at -10% 8%, #110F23B5 1%, #073AFF00 60%), radial-gradient(75% 75% at 114% 112%, #110F23B8 1%, #073AFF00 60%), radial-gradient(75% 75% at 8% 90%, #3F206021 1%, #073AFF00 60%), radial-gradient(85% 85% at 12% 82%, #9930AF21 1%, #073AFF00 60%), radial-gradient(30% 75% at 70% 23%, #3B27528A 2%, #073AFF00 60%), radial-gradient(80% 80% at 75% 9%, #A03FC52B 26%, #073AFF00 60%), radial-gradient(80% 80% at 19% 48%, #0F31943D 26%, #073AFF00 60%), radial-gradient(80% 80% at 89% 67%, #344AB038 26%, #073AFF00 60%), linear-gradient(29deg, #181C30FF 100%, #7C5F85FF 100%);
+  background-attachment: fixed;
+  background-repeat: repeat;
 }

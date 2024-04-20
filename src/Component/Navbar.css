@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Tan Pearl';
+    src: url(../assets/font/tan-pearl.otf);
+  }
+
+.navbar {
+    position: fixed;
+    z-index: 1;
+    margin-top: 2.5rem;
+    margin-left: 2.5rem;
+    height: 100vh;
+    color: #fff;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+.logo {
+    height: 150px;
+    justify-self: center;
+    filter: grayscale(80%);
+}
+
+a {
+    text-decoration-line: none;
+    color: #fff;
+}
+
+li {
+    transition: .5s ease;
+    margin-bottom: 3rem;
+    font-family: 'Tan Pearl', Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+li:hover {
+    transform: translateX(2rem) scale(1.1);
+    transition: .5s ease;
+
+}
+
+ul {
+    list-style-type: none;
+    font-size: 2rem;
+   }
+   
