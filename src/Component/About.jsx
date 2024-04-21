@@ -4,7 +4,7 @@ import profil from "../assets/img/reading-book.png"
 
 function About() {
   return (
-    <div className='about-container'>
+    <div id='about-section' className='about-container'>
         <div className='about'>
             <div>
                 <img  id="pp" src={profil} alt="picture-profil"/>

@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './Component/Navbar'
 import Landing from './Component/Landing'
 import About from './Component/About'
+import Project from './Component/Project'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Navbar/>
         <Landing/>
         <About/>
+        <Project/>
       </div>
   )
 }
