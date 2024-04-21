@@ -5,17 +5,24 @@ import { projetData } from '../assets/projet-data'
 function Project() {
   return (
     <div id='project-section' className='project-container'>
-        <div className='project-list'>
-            <h2 className='title'>Projets</h2>
+
+        <h2 className='title'>Mes projets</h2>
+
+        <div className='project-wrapper'>
             {projetData.map((data, index) => (
-                <div className='projet-card' key={index}>
-                    <h3>{data.name}</h3>
-                    <img src={data.apercu} alt="aperçu projet" />
-                    <p>{data.type}</p>
-                    <a href={data.github}>Code source</a>
-                </div>
+                <a href={data.github}>
+                    <div className='project-frame' key={index}>
+                        <div className='detail-project'>
+                            <h3 className='name'>{data.name}</h3>
+                            <p className='type'>{data.type}</p>
+                            <p className='desc'>{data.description}</p>
+                        </div>
+                        <img className='img-project' src={data.apercu} alt="aperçu projet" />
+                    </div>
+                </a>
             ))}
         </div>
+
     </div>
   )
 }
