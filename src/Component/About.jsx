@@ -1,12 +1,12 @@
 import React from 'react'
 import './About.css'
-import profil from "../assets/img/reading-book.png"
+import profil from "../assets/img/profile_pic_2.jpg"
 
 function About() {
   return (
     <div id='about-section' className='about-container'>
         <div className='about'>
-            <div>
+            <div id='border-pp'>
                 <img  id="pp" src={profil} alt="picture-profil"/>
             </div>
 
@@ -22,6 +22,7 @@ function About() {
                 Attirée par l’alliance entre la créativité et la technologie,
                 j’ai choisi de me spécialiser dans le développement web.
             </p>
+           <a href="../assets/files/PELERIN-Chloe-CV.pdf" download="PELERIN_Chloé_CV"><button>Télécharger mon CV</button></a>
             </div>
         </div>
     </div>
