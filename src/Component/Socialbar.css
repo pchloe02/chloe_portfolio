@@ -1,0 +1,78 @@
+.social-btn {
+    display: flex;
+    width: 8rem;
+    height: 3rem;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: solid white 1px;
+    border-radius: 30px 0 0 30px;
+    margin-bottom: 5px;
+    position: relative;
+    left: 4.5rem;
+    transition: left 1s;
+}
+
+.social-btn:hover {
+    left: 0;
+    transition: left 1s;
+}
+
+.social {
+    position: fixed;
+    right: 0px;
+    bottom: 4rem;
+}
+
+.social a {
+    text-decoration: none;
+}
+
+.color-bg:hover {
+    background-color: #4c316d;
+}
+
+.google-font {
+
+    font-size: 1.2rem;
+    margin-right: -0.5rem;
+}
+
+.social-btn img {
+    width: 40px;
+}
+
+.social-btn p {
+    color: white;
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.icons8-linkedin {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url("../assets/img/linkedin.svg") 50% 50% no-repeat;
+    background-size: 100%;
+
+}
+
+.icons8-github {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url("../assets/img/github.svg") 50% 50% no-repeat;
+    background-size: 100%;
+}
+
+.icons8-mail {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    background: url("../assets/img/mail.svg") 50% 50% no-repeat;
+    background-size: 100%;
+}

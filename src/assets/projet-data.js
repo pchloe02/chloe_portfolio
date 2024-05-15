@@ -1,5 +1,5 @@
 import daily_space from '../assets/img/project1_img.jpg'
-import on_meuble from '../assets/img/on-meuble.png'
+import on_meuble from '../assets/img/on_meuble.png'
 import art_imprint from '../assets/img/login_page.png'
 
 

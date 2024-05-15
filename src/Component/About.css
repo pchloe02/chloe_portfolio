@@ -16,10 +16,10 @@
 }
 
 h2 {
- font-family: 'Tan Pearl';
- font-weight: 100;
- font-size: 2rem;
- margin: 1rem 0;
+    font-family: 'Tan Pearl';
+    font-weight: 100;
+    font-size: 2rem;
+    margin: 2rem 0;
 
 }
 
@@ -43,8 +43,8 @@ h2 {
     width: 75%;
     margin: 50px;
     filter: grayscale(25%);
-    
-    
+
+
 }
 
 button {
@@ -57,13 +57,12 @@ button {
     font-family: "Red Hat Text";
     font-size: 1rem;
     font-weight: 500;
-    cursor:pointer;
+    cursor: pointer;
     transition: ease 0.3s;
 }
 
 button:hover {
-    background-color: rgba(153, 134, 197, 0.534);
+    background-color: #4c316d;
     transition: ease 0.3s;
     transform: scale(1.05);
-
 }
