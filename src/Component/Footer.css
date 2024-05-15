@@ -1,0 +1,11 @@
+.footer {
+
+    display: flex;
+    justify-content: space-around;
+    gap: 80rem;
+    border-top: solid white 1px;
+    margin: 10rem 7rem 0 7rem;
+    font-size: 1.25rem;
+    font-family: 'Tan Pearl';
+    padding: 1rem;
+}
