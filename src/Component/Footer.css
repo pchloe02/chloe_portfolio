@@ -9,3 +9,9 @@
     font-family: 'Tan Pearl';
     padding: 1rem;
 }
+
+@media screen and (max-width: 1366px) {
+    .footer {
+        gap: 40rem;
+    }
+}
