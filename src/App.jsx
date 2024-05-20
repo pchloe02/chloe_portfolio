@@ -6,13 +6,18 @@ import Project from './Component/Project'
 import Socialbar from './Component/Socialbar'
 import Footer from './Component/Footer'
 
+
+
+
 function App() {
   return (
 
+
     <div>
       <Navbar />
-      <Socialbar />
       <Landing />
+
+      <Socialbar />
       <About />
       <Project />
       <Footer />
