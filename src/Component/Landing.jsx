@@ -42,7 +42,7 @@ function Landing() {
             var mouseY = e.clientY;
 
             var element = document.getElementById('canvas');
-            element.style.transform = 'translate(' + (mouseX / 50) + 'px, ' + (mouseY / 50) + 'px)';
+            element.style.transform = 'translate(' + (mouseX / 80) + 'px, ' + (mouseY / 80) + 'px)';
           })
         }
 
