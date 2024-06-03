@@ -5,6 +5,7 @@ import { extend, useThree } from '@react-three/fiber';
 import { FontLoader } from 'three/examples/jsm/Addons.js';
 import { TextGeometry } from 'three/examples/jsm/Addons.js';
 import TanPearl from '../assets/font/TANPEARL_Regular.json'
+import arrow from '../assets/img/down-arrow.png'
 import { useControls } from 'leva'
 import './Landing.css'
 
@@ -29,8 +30,21 @@ function Landing() {
 
   return (
     <div id='home-section' className='landing'>
+      <div className='arrow-scroll'>
+        <p className='scroll-text'>Scroll to continue</p>
+        <img src={arrow} alt="arrow" />
+      </div>
+      <Canvas id='canvas'>
 
-      <Canvas>
+        {
+          document.addEventListener('mousemove', function (e) {
+            var mouseX = e.clientX;
+            var mouseY = e.clientY;
+
+            var element = document.getElementById('canvas');
+            element.style.transform = 'translate(' + (mouseX / 50) + 'px, ' + (mouseY / 50) + 'px)';
+          })
+        }
 
         <OrbitControls enableZoom={false} />
         <directionalLight position={[0, 0, 1]} intensity={5} />
