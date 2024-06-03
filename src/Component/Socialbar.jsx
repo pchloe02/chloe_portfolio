@@ -7,7 +7,7 @@ export default function Socialbar() {
             <a href="https://www.linkedin.com/in/chlo%C3%A9-pelerin-766a08213/" target="_blank">
                 <div class="social-btn color-bg">
                     <div class="icons8-linkedin"></div>
-                    <p class="google-font">Linkedin</p>
+                    <p class="google-font-2">Linkedin</p>
                 </div>
             </a>
             <a href="https://github.com/pchloe02" target="_blank">

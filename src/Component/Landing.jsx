@@ -13,7 +13,7 @@ extend({ TextGeometry })
 
 function Landing() {
   const font = new FontLoader().parse(TanPearl)
-  
+
   // const materialProps = useControls({
   //   thickness: { value: 5, min: 0, max: 20 },
   //   roughness: { value: 0, min: 0, max: 1, step: 0.1 },
@@ -29,26 +29,27 @@ function Landing() {
 
   return (
     <div id='home-section' className='landing'>
-      
+
       <Canvas>
-      
-      <directionalLight position={[0, 0, 1]} />
 
-      {/* Text */}
-      <mesh position={[-5, 0, -1]}>
-        <textGeometry args={['Chloé Pelerin', {font, size: 1, height: 0, curveSegments: 90}]} />
-        <meshPhysicalMaterial attach='material' color={'white'}/>
-      </mesh>
+        <OrbitControls enableZoom={false} />
+        <directionalLight position={[0, 0, 1]} intensity={5} />
+        <ambientLight intensity={3} />
 
-      {/* cube */}
-    {/* <mesh position={[1, 0.5, 0]} rotation-x={2}>
-      <boxGeometry  />
-      <meshPhysicalMaterial metalness={0} roughness={0}/>
-    </mesh> */}
-    <OrbitControls />
+        {/* Text */}
+        <mesh position={[-5.5, 0, -1]}>
+          <textGeometry args={['Chloé Pelerin', { font, size: 1, depth: 0, curveSegments: 90 }]} />
+          <meshPhysicalMaterial attach='material' color={'white'} />
+        </mesh>
+
+        {/* cube */}
+        {/* <mesh position={[1, 0.5, 0]} rotation-x={2}>
+          <boxGeometry />
+          <meshPhysicalMaterial metalness={0} roughness={0} color={'red'} />
+        </mesh> */}
       </Canvas>
-      <a href="#about-section"><button>Voir plus</button></a>
-    
+      {/* <a href="#about-section"><button>Voir plus</button></a> */}
+
 
       {/* <h1 className='greeting'>Chloé Pelerin <br /> développeuse front-end à la recherche d'une alternance !</h1> */}
     </div>
