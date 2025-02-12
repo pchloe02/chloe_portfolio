@@ -1,6 +1,7 @@
 import daily_space from '../assets/img/project1_img.jpg'
-import on_meuble from '../assets/img/OnMeuble (1).png'
+import on_meuble from '../assets/img/on_meuble.png'
 import art_imprint from '../assets/img/login_page.png'
+import loop from '../assets/img/Loop.png'
 
 
 const projetData =
@@ -34,17 +35,15 @@ const projetData =
         "github": "https://github.com/pchloe02/art-imprint",
         "demo": "lien demo",
         "techno": "React, CSS (TBD)"
-
     },
     {
-        // "name": "Studio Quiz",
-        // "type": "Projet personnel",
-        // "description": "Testez vos connaissances dans un temps imparti et créez vos propres flashcard",
-         "apercu": "",
-        // "github": "lien",
-        // "demo": "lien demo",
-        // "techno": "React & CSS"
-        "wip" : "work in progress..."
+        "name": "Loop",
+        "type": "Projet collectif (en cours)",
+        "description": "Loop est une application qui permet de faciliter la découverte de jolis lieux urbains inconnus autour de soi.",
+        "apercu": loop,
+        "github": "https://github.com/adatechschool/loop-app",
+        "demo": "lien demo",
+        "techno": "Front : React, Typecript | Back : NodeJs/Express | Db : PostgreSQL"
     }
 ];
 

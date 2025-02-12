@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <div className='footer'>
             <p>Chloé Pelerin</p>
-            <p>2024</p>
+            <p>2025</p>
 
         </div>
     )
