@@ -1,9 +1,35 @@
 @font-face {
-    font-family: 'Tan Pearl';
-    src: url(./assets/font/tan-pearl.otf);
-  }
+  font-family: "Tan Pearl";
+  src: url(./assets/font/tan-pearl.otf);
+}
 
 @font-face {
-    font-family: 'Red Hat Text';
-    src: url(./assets/font/RedHatText-VariableFont_wght.ttf);
-  }
+  font-family: "Red Hat Text";
+  src: url(./assets/font/RedHatText-VariableFont_wght.ttf);
+}
+
+h2 {
+  font-family: "Tan Pearl";
+  font-weight: 100;
+  font-size: 2rem;
+}
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.sidebar-container {
+  width: 250px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 0 20px;
+  overflow-x: hidden;
+  margin: 0 80px;
+}
