@@ -1,15 +1,14 @@
 @import url(./App.css);
 
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: 'Red Hat Text', Arial, Helvetica, sans-serif ;
+  font-family: "Red Hat Text", Arial, Helvetica, sans-serif;
   height: 100vh;
   color: #fff;
-
 }
 
 #noise {
@@ -29,8 +28,28 @@ body {
   z-index: 0;
   margin: 0;
   background-size: 100% 100%;
-  background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
-  background-image: radial-gradient(75% 75% at 38% 44%, #282C46BF 0%, #073AFF00 99%), radial-gradient(75% 75% at -10% 8%, #110F23B5 1%, #073AFF00 60%), radial-gradient(75% 75% at 114% 112%, #110F23B8 1%, #073AFF00 60%), radial-gradient(75% 75% at 8% 90%, #3F206021 1%, #073AFF00 60%), radial-gradient(85% 85% at 12% 82%, #9930AF21 1%, #073AFF00 60%), radial-gradient(30% 75% at 70% 23%, #3B27528A 2%, #073AFF00 60%), radial-gradient(80% 80% at 75% 9%, #A03FC52B 26%, #073AFF00 60%), radial-gradient(80% 80% at 19% 48%, #0F31943D 26%, #073AFF00 60%), radial-gradient(80% 80% at 89% 67%, #4b34b038 26%, #073AFF00 60%), linear-gradient(29deg, #181C30FF 100%, #7C5F85FF 100%);
+  background-position:
+    0px 0px,
+    0px 0px,
+    0px 0px,
+    0px 0px,
+    0px 0px,
+    0px 0px,
+    0px 0px,
+    0px 0px,
+    0px 0px,
+    0px 0px;
+  background-image:
+    radial-gradient(75% 75% at 38% 44%, #282c46bf 0%, #073aff00 99%),
+    radial-gradient(75% 75% at -10% 8%, #110f23b5 1%, #073aff00 60%),
+    radial-gradient(75% 75% at 114% 112%, #110f23b8 1%, #073aff00 60%),
+    radial-gradient(75% 75% at 8% 90%, #3f206021 1%, #073aff00 60%),
+    radial-gradient(85% 85% at 12% 82%, #9930af21 1%, #073aff00 60%),
+    radial-gradient(30% 75% at 70% 23%, #3b27528a 2%, #073aff00 60%),
+    radial-gradient(80% 80% at 75% 9%, #a03fc52b 26%, #073aff00 60%),
+    radial-gradient(80% 80% at 19% 48%, #0f31943d 26%, #073aff00 60%),
+    radial-gradient(80% 80% at 89% 67%, #4b34b038 26%, #073aff00 60%),
+    linear-gradient(29deg, #181c30ff 100%, #7c5f85ff 100%);
   background-attachment: fixed;
   background-repeat: repeat;
 }
