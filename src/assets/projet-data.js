@@ -29,7 +29,7 @@ const projetData =
         },
         {
             "name": "Oven Tales",
-            "type": "Projet personnel (en cours)",
+            "type": "Projet scolaire",
             "description": "Oven Tales est un blog communautaire dédiée au partage de recettes de cuisine. Créez et partagez vos recettes. Commentez et interagissez avec la communauté !",
             "apercu": oven_tales,
             "github": "https://github.com/pchloe02/oven-tales-blog",
